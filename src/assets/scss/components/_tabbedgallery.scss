@@ -1,0 +1,95 @@
+.lf-tabbedgallery {
+    padding: 50px 0;
+}
+
+.lf-tabbedgallery-main {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.lf-tabbedgallery-btn {
+    appearance: none;
+    border-radius: 0;
+    width: 100%;
+    display: block;
+    border: none;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100px;
+}
+
+.lf-tabbedgallery-nav-btn {
+    border-radius: 0;
+    border: none;
+    background-color: $gray;
+    appearance: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 400ms;
+
+    &:hover {
+        background-color: #008cff;
+    }
+
+    &.active {
+        background-color: #008cff;
+        color: $white;
+    }
+}
+
+.lf-tabbedgallery-btn-wrap {
+    flex: 0 0 ($c-col * 4);
+    max-width: ($c-col * 4);
+    padding: 5px;
+    opacity: .5;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.lf-tabbedgallery-tab {
+    display: none;
+    flex-wrap: wrap;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.lf-tabbedgallery-tabs,
+.lf-tabbedgallery-img-wrap {
+    flex: 0 0 ($c-col * 6);
+    max-width: ($c-col * 6);
+    padding: 15px;
+}
+
+.lf-tabbedgallery-gallery {
+    margin: -5px;
+}
+
+.social-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0;
+
+    a {
+        border-radius: 50%;
+        display: inline-flex;
+        height: 2em;
+        width: 2em;
+        flex: 0 0 2em;
+        max-width: 2em;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: $dur;
+
+        &:hover {
+            background-color: #008cff;
+        }
+    }
+}
